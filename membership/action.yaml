@@ -2,7 +2,7 @@ name: Check membership
 description: Checks the specified member is part of the organisation derived from the calling repo - i.e. if called from `octocat/Spoon-Knife` with user input `mona`, checks if `mona` is in the `octocat` org
 inputs:
   member-name:
-    description: Typically github.actor
+    description: Typically github.triggering_actor
     required: true
   token:
     description: A PAT (i.e. non-default token) scoped with '"Members" organization permissions (read)'
